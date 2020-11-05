@@ -1,0 +1,15 @@
+ALGORITHM lengtstr
+VAR
+str:STRING 
+nbr-espace: INTEGER:=1
+
+BEGIN
+    read(str)
+    write("length:",str.length)
+    for i from 0 to str.length -2 step 1 do 
+    if (str[i]="")then
+    nbr-espace:=nbr-espace+1
+    end if
+    end for
+
+END
